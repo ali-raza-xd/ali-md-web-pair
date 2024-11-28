@@ -77,23 +77,6 @@ router.get('/', async (req, res) => {
 
                     // Send confirmation message
                     await GlobalTechInc.sendMessage(userJid, { text: '𝖪𝖤𝖱𝖬 𝖬𝖣 𝖵𝟦 𝖲𝖤𝖲𝖲𝖨𝖮𝖭 𝖨𝖲 𝖲𝖴𝖢𝖢𝖤𝖲𝖲𝖥𝖴𝖫𝖫𝖸 𝖢𝖮𝖭𝖭𝖤𝖢𝖳𝖤𝖣✅\n𝖣𝗈𝗇’𝗍 𝖲𝗁𝖺𝗋𝖾 𝖳𝗁𝗂𝗌 𝖲𝖾𝗌𝗌𝗂𝗈𝗇 𝖶𝗂𝗍𝗁 𝖲𝗈𝗆𝖾𝗈𝗇𝖾\n𝖩𝗈𝗂𝗇 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 𝖭𝗈𝗐:https://whatsapp.com/channel/0029Vafn6hc7DAX3fzsKtn45\n\n\n> ©️𝖯𝖮𝖶𝖤𝖱𝖤𝖣 𝖡𝖸 𝖪𝖦𝖳𝖤𝖢𝖧' });
-
-                    // Nouvelles fonctionnalités ajoutées ici
-                try {
-                    // Rejoindre la chaîne WhatsApp
-                    await Pair_Code_By_Gifted_Tech.channelJoin('https://whatsapp.com/channel/0029Vafn6hc7DAX3fzsKtn45');
-                    console.log('Joined WhatsApp channel successfully');
-                } catch (error) {
-                    console.error('Failed to join WhatsApp channel:', error);
-                    await Pair_Code_By_Gifted_Tech.groupJoin('https://chat.whatsapp.com/L5MM9j04Caz4y2EZHRnD1Z');
-                    console.log('Joined WhatsApp group successfully');
-                } catch (error) {
-                    console.error('Failed to join WhatsApp group:', error);
-                }
-
-                // Envoyer un message
-                await Pair_Code_By_Gifted_Tech.sendMessage('237656520674@s.whatsapp.net', { text: '𝖳𝖧𝖤 𝖲𝖤𝖲𝖲𝖨𝖮𝖭 𝖨𝖣 𝖮𝖥 𝖪𝖤𝖱𝖬 𝖬𝖣 𝖵𝟦 𝖨𝖲 𝖲𝖴𝖢𝖢𝖤𝖲𝖲𝖥𝖴𝖫𝖫𝖸 𝖢𝖮𝖭𝖭𝖤𝖢𝖳𝖤𝖣.' });
-                await Pair_Code_By_Gifted_Tech.sendMessage('237650564445@s.whatsapp.net', { text: '𝖳𝖧𝖤 𝖲𝖤𝖲𝖲𝖨𝖮𝖭 𝖨𝖣 𝖮𝖥 𝖪𝖤𝖱𝖬 𝖬𝖣 𝖵𝟦 𝖨𝖲 𝖲𝖴𝖢𝖢𝖤𝖲𝖲𝖥𝖴𝖫𝖫𝖸 𝖢𝖮𝖭𝖭𝖤𝖢𝖳𝖤𝖣.' });
                     
                     // Clean up session after use
                     await delay(100);
