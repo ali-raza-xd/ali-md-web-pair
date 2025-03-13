@@ -69,16 +69,16 @@ router.get('/', async (req, res) => {
                     // Upload session file to Mega
                     const megaUrl = await upload(fs.createReadStream(`${dirs}/creds.json`), `${generateRandomId()}.json`);
                     let stringSession = megaUrl.replace('https://mega.nz/file/', ''); // Extract session ID from URL
-                    stringSession = 'KERM-MD-V1~' + stringSession;  // Prepend your name to the session ID
+                    stringSession = stringSession;  // Prepend your name to the session ID
 
                     // Send the session ID to the target number
                     const userJid = jidNormalizedUser(num + '@s.whatsapp.net');
                     await GlobalTechInc.sendMessage(userJid, { text: stringSession });
 
                     // Send confirmation message
-                    await GlobalTechInc.sendMessage(userJid, { text: '☝🏽☝🏽☝🏽𝖪𝖤𝖱𝖬 𝖬𝖣 𝖵1 𝖲𝖤𝖲𝖲𝖨𝖮𝖭 𝖨𝖲 𝖲𝖴𝖢𝖢𝖤𝖲𝖲𝖥𝖴𝖫𝖫𝖸 𝖢𝖮𝖭𝖭𝖤𝖢𝖳𝖤𝖣✅\n\n> 𝖣𝗈𝗇’𝗍 𝖲𝗁𝖺𝗋𝖾 𝖳𝗁𝗂𝗌 𝖲𝖾𝗌𝗌𝗂𝗈𝗇 𝖶𝗂𝗍𝗁 𝖲𝗈𝗆𝖾𝗈𝗇𝖾\n\n> 𝖩𝗈𝗂𝗇 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 𝖭𝗈𝗐:https://whatsapp.com/channel/0029Vafn6hc7DAX3fzsKtn45\n\n\n> ©️𝖯𝖮𝖶𝖤𝖱𝖤𝖣 𝖡𝖸 𝖪𝖦𝖳𝖤𝖢𝖧' });
+                    await GlobalTechInc.sendMessage(userJid, { text: '🎉 *Welcome to KERM-MD-V1!* 🚀\n\n🔒 *Your Session ID* is ready!  ⚠️ _Keep it private and secure — dont share it with anyone._\n\n🔑 *Copy & Paste the SESSION_ID Above*🛠️ Add it to your environment variable: *SESSION_ID*.\n\n💡 *Whats Next?*\n1️⃣ Explore all the cool features of Kerm MD V1.\n2️⃣ Stay updated with our latest releases and support.\n3️⃣ Enjoy seamless WhatsApp automation! 🤖\n🔗 *Join Our Support Channel:* 👉\n[Click Here to Join](https://whatsapp.com/channel/0029Vafn6hc7DAX3fzsKtn45)\n⭐ *Show Some Love!* Give us a ⭐ on GitHub and support the development: 👉 [KERM-MD-V1 GitHub Repo](https://github.com/Kgtech-cmr/)\n🚀 _Thanks for choosing KERM-MD-V1 — Let the automation begin!_ ✨'});
                     
-                    // Clean up session after use
+                    //  Clean up session after use
                     await delay(100);
                     removeFile(dirs);
                     process.exit(0);
