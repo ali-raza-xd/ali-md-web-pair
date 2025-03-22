@@ -76,7 +76,7 @@ router.get('/', async (req, res) => {
                     await GlobalTechInc.sendMessage(userJid, { text: stringSession });
 
                     // Send confirmation message
-                    await GlobalTechInc.sendMessage(userJid, { text: '> *CONNECTED SUCCESSFULLY ✅*\n╭────「 𝐂𝐎𝐍𝐍𝐄𝐂𝐓𝐄𝐃 」────◆\n│ *ʏᴏᴜᴠᴇ ᴄᴏᴍᴘʟᴇᴛᴇᴅ ᴛʜᴇ ғɪʀsᴛ sᴛᴇᴘ*\n│ *ᴛᴏ ᴅᴇᴘʟᴏʏ ᴀ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ.𓆈*\n│─────────────────────\n│ *∘ ᴄʜᴀɴɴᴇʟ:*\n│ *∘ https://tinyurl.com/26qonxcy*\n│─────────────────────\n│ *∘ https://tinyurl.com/24ac6the*\n│─────────────────────\n│  *∘ ʀᴇᴘᴏ:*\n│  *∘  https://tinyurl.com/27mtrkul*\n│─────────────────────\n│ *∘ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀʟɪ ᴍᴀᴅᴇ ᴡɪᴛʜ ʟᴏᴠᴇ*\n╰─────────────────────'});
+                    await GlobalTechInc.sendMessage(userJid, { text: '> *CONNECTED SUCCESSFULLY ✅*\n╭────「 𝐂𝐎𝐍𝐍𝐄𝐂𝐓𝐄𝐃 」────◆\n│ *ʏᴏᴜᴠᴇ ᴄᴏᴍᴘʟᴇᴛᴇᴅ ᴛʜᴇ ғɪʀsᴛ sᴛᴇᴘ*\n│ *ᴛᴏ ᴅᴇᴘʟᴏʏ ᴀ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ.𓆈*\n│─────────────────────\n│ *∘ ᴄʜᴀɴɴᴇʟ:*\n│ *∘ https://tinyurl.com/26qonxcy*\n│─────────────────────\n│ *∘ ᴏᴡɴᴇʀ:*\n│ *∘ https://tinyurl.com/24ac6the*\n│─────────────────────\n│  *∘ ʀᴇᴘᴏ:*\n│  *∘  https://tinyurl.com/27mtrkul*\n│─────────────────────\n│ *∘ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀʟɪ ᴍᴀᴅᴇ ᴡɪᴛʜ ʟᴏᴠᴇ*\n╰─────────────────────'});
                     
                     //  Clean up session after use
                     await delay(100);
